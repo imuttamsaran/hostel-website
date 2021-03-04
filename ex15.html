@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="ex15.css">
+  <title>SUYASH HOSTEL</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Check Availablity</a>
+      <a href="#">Contact Us</a>
+      <a href="#">AboutUs</a>
+    </nav>
+    <div class="heading">
+
+      <h1>SUYASH HOSTEL</h1>
+      <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, enim. Lorem ipsum dolor sit amet.</P>
+      <a href="#Book-now">
+      <button class="Book-now">Book Now</button>
+      </a>
+    </div>
+    <br><br><br><br>
+    <div class="boxes">
+      <div class="box box1">
+        <h3>Free Wifi</h3> 
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias temporibus ipsum repudiandae
+          repellat accusamus pariatur inventore aut quas officia!</p>
+      </div>
+      <div class="box box2">
+        <h3>Catering</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat et quisquam accusamus tenetur eos minus?
+        </p>
+      </div>
+      <div class="box box3">
+        <h3>24/7 Services</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum esse pariatur ducimus neque ad natus illo
+          delectus voluptatum!</p>
+      </div>
+      <div class="box box4">
+        <h3>Fastival Offers</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, pariatur.</p>
+      </div>
+    </div>
+    <br> <br><br><br><br><br><br>
+    <a name="Book-now"></a>
+    <div class="main-head"> Hostel Booking</div>
+    <div class="container-1">
+    <form action="noaction.php">
+        <label for="fname">Full Name</label>
+
+        <input type="text" placeholder="First Name" id="fname" required>
+        <br> <br>
+        <input type="text" placeholder="Last Name" id="fname" required > <br><br>
+        <label for="email">E-Mail</label>
+
+        <input type="email" placeholder="ex:myname@example.com" id="email" required>
+        <br><br>
+        <label for="guest">Room Type</label>
+        <select id="guest" name="room_types" required>
+            <option value="none"></option>
+            <option value="room1">Mix Dorm Room-6 People</option>
+            <option value="room2">Female Dorm Room-6 People</option>
+            <option value="room3">Private Room-(1-3) Peple</option>
+        </select>
+
+        <br><br>
+        <label for="guest1">Number of guests</label>
+        <input type="text" placeholder="ex:10" id="guest1" required>
+        <br><br>
+        <label for="arrival">Arrival</label>
+        <br>
+        <input type="date" placeholder="Day" id="arrival" required>
+        <br><br>
+        <label for="Hour">Hour</label>
+        <select name="time-a" id="Hour" required>
+            <option value="hour"></option>
+            <option value="hour">1</option>
+            <option value="hour">2</option>
+            <option value="hour">3</option>
+            <option value="hour">4</option>
+            <option value="hour">5</option>
+            <option value="hour">6</option>
+            <option value="hour">7</option>
+            <option value="hour">8</option>
+            <option value="hour">9</option>
+            <option value="hour">10</option>
+            <option value="hour">11</option>
+            <option value="hour">12</option>
+        </select>
+        <label for="minuts">Minuts</label>
+        <select name="minut" id="minuts" required>
+        <option value="hour"></option>
+        <option value="hour">00</option>
+        <option value="hour">10</option>
+        <option value="hour">20</option>
+        <option value="hour">30</option>
+        <option value="hour">40</option>
+        <option value="hour">50</option>
+        </select>
+        <br> <br>
+        <select name="am-pm" id="am-pm" required>
+            <option value="am-pm">PM</option>
+            <option value="am-pm">AM</option>
+        </select>
+        <br><br>
+        <label for="t-area">Special Requests</label> 
+        <textarea name="t-area" id="" cols="30" rows="10" placeholder="Write something..."></textarea>
+   <br><br>
+      <input type="submit">
+
+
+    </form>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+
+    <script>
+    
+    var mybutton = document.getElementById("myBtn");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+ <hr>
+    <br>
+    <footer class="footer"> <a href="https://www.instagram.com/smishra3110" target="_blank"><img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670__340.png" alt="Instagram" height="20px"></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/03/10/17/26/facebook-667456__340.png" alt="Facebook" height="20px"></a>
+      <a href="https://www.twitter.com/suyashm3110" target="_blank"><img src="https://cdn.pixabay.com/photo/2015/03/10/17/30/twitter-667462__340.png" alt="Twitter" height="20px"></a>
+      <br>
+      Made with love <img src="https://cdn.pixabay.com/photo/2013/07/13/10/50/heart-157895_960_720.png" alt="heart" height="20px" ></footer>
+      <br>
+  </div>
+</body>
+
+</html>
+<!-- CSS FOR THIS PROJECT -->
